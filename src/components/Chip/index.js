@@ -26,13 +26,10 @@ const ChipWrapper = styled.p`
     // text-align: center;
 `
 
-const genreChip = ({genre, onToggleGenre}) => {
-  return (
-    <ChipWrapper onTouchTap={() => onToggleGenre(genre)}>
-      {genre.Name}
-    </ChipWrapper>
-  );
-}
+const Chip = ({genre, onToggleGenre}) => (
+  <ChipWrapper onClick={() => onToggleGenre(genre)}>
+    {genre.Name}
+  </ChipWrapper>
+)
 
-
-export default genreChip;
+export default Chip;
