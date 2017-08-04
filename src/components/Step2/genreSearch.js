@@ -3,7 +3,7 @@ import React from 'react';
 const genreSearch = () => {
   return (
     <div>
-      <p>search!</p>
+      <p>search for other music genres...</p>
     </div>
   );
 }

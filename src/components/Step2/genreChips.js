@@ -1,10 +1,10 @@
 import React from 'react';
 
-import GenreChip from './genreChip';
+import Chip from '../Chip';
 
 const genreChips = ({genres, onToggleGenre}) => {
   const renderChip = (genre) => (
-      <GenreChip
+      <Chip
         key={genre.ID}
         genre={genre}
         onToggleGenre={onToggleGenre} />

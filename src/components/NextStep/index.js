@@ -1,13 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import Paper from 'material-ui/Paper';
+const NextWrapper = styled.p`
 
-const NextStep = ({onIncrementStep}) => {
+`
+
+const NextStep = ({onDecrementStep}) => {
   return (
     <div>
-      <Paper onClick={onIncrementStep} >
-        <h1>NextStep</h1>
-      </Paper>
+      <NextWrapper onClick={onDecrementStep} >
+        Continue
+      </NextWrapper>
     </div>
     );
 }
