@@ -1,0 +1,121 @@
+export const mockGenres = [
+  {
+    "Name": "Blues =",
+    "ParentGenreID": null,
+    "ID": 190,
+    "selected": true,
+  },{
+    "Name": "Acoustic Blues",
+    "ParentGenreID": 190,
+    "ID": 117,
+    "selected": false,
+  },
+  {
+    "Name": "Boogie - Woogie",
+    "ParentGenreID": 190,
+    "ID": 118,
+    "selected": false,
+  },
+  {
+    "Name": "Classic Blues",
+    "ParentGenreID": 190,
+    "ID": 119,
+    "selected": false,
+  },
+  {
+    "Name": "Country Blues",
+    "ParentGenreID": 190,
+    "ID": 120,
+    "selected": false,
+  },
+  {
+    "Name": "Delta Blues",
+    "ParentGenreID": 190,
+    "ID": 121,
+    "selected": false,
+  },
+  {
+    "Name": "Chill-out =",
+    "ParentGenreID": null,
+    "ID": 191,
+    "selected": false,
+  },
+  {
+    "Name": "Electric Blues",
+    "ParentGenreID": 190,
+    "ID": 122,
+    "selected": false,
+  },
+  {
+    "Name": "Ambient",
+    "ParentGenreID": 191,
+    "ID": 95,
+    "selected": false,
+  },
+  {
+    "Name": "Downtempo",
+    "ParentGenreID": 191,
+    "ID": 96,
+    "selected": false,
+  },
+  {
+    "Name": "Easy Listening",
+    "ParentGenreID": 191,
+    "ID": 97,
+    "selected": false,
+  },
+  {
+    "Name": "Lounge",
+    "ParentGenreID": 191,
+    "ID": 99,
+    "selected": false,
+  },
+  {
+    "Name": "New Age",
+    "ParentGenreID": 191,
+    "ID": 101,
+    "selected": false,
+  },
+  {
+    "Name": "Nu Jazz",
+    "ParentGenreID": 191,
+    "ID": 102,
+    "selected": false,
+  },
+  {
+    "Name": "Trip-hop",
+    "ParentGenreID": 191,
+    "ID": 106,
+    "selected": false,
+  },
+  {
+    "Name": "Classic =",
+    "ParentGenreID": null,
+    "ID": 192,
+    "selected": false,
+  },
+  {
+    "Name": "Baroque",
+    "ParentGenreID": 192,
+    "ID": 177,
+    "selected": false,
+  },
+  {
+    "Name": "Chamber",
+    "ParentGenreID": 192,
+    "ID": 178,
+    "selected": false,
+  },
+  {
+    "Name": "Opera",
+    "ParentGenreID": 192,
+    "ID": 179,
+    "selected": false,
+  },
+  {
+    "Name": "Symphony",
+    "ParentGenreID": 192,
+    "ID": 180,
+    "selected": false,
+  }
+]
