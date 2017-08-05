@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const InfoLineWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding: 17px 0;
+  padding: 30px 0 17px 0;
 `
 
 const IntroWrapper = styled.div`

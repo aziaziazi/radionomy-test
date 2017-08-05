@@ -15,7 +15,7 @@ const H1Wrapper = styled.h1`
   line-height: 48px;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 46px;
+  margin-bottom: 29px;
 
 `
 
