@@ -12,8 +12,8 @@ class FooterContainer extends Component {
   render() {
     return (
       <StepsNavigation
-          onDecrementStep={this.props.onDecrementStep}
-          onIncrementStep={this.props.onIncrementStep}
+        onDecrementStep={this.props.onDecrementStep}
+        onIncrementStep={this.props.onIncrementStep}
       />
     );
   }

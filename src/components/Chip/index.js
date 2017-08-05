@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+// change the aspect of selected chips
 const ChipWrapper = styled.p`
   display: inline-block;
   padding: 0 15px;
@@ -18,6 +19,8 @@ const ChipWrapper = styled.p`
 `
 
 const Chip = ({genreID, label, onClick, selected, isParentGenre, Expended, onExpend}) => {
+
+  // Render the clickable +/-
   const expendButton = () => (
     <span onClick={(e) => {
       e.stopPropagation()
@@ -27,6 +30,7 @@ const Chip = ({genreID, label, onClick, selected, isParentGenre, Expended, onExp
     </span>
   )
 
+  // Render Chip with it's label and a +/- button if it is expendable (parents)
   return (
     <ChipWrapper
       selected={selected}

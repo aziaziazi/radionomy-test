@@ -11,6 +11,7 @@ export default (state = mockGenres, action) => {
     case 'TOGGLE_EXPEND':
       return state.map(genre =>
         (genre.ID === action.genreID)
+          // TODO: lowerCase "Expended"
           ? {...genre, Expended: !genre.Expended}
           : genre
       )

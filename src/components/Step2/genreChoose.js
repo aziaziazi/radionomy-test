@@ -4,8 +4,10 @@ import GenreChips from './genreChips';
 import InfoLine from './infoLine';
 
 const genreChoose = ({genres, onToggleGenre, onExpend}) => {
-    // TODO: Store in the store instead
-   const GenreText = () => {
+
+    // Return a sentence with the number of genres selected
+    const GenreText = () => {
+    // TODO: Store selectedGenres in the store instead
     let selectedGenres = [];
     genres.forEach((genre) => {
       if (genre.selected) {
@@ -24,6 +26,7 @@ const genreChoose = ({genres, onToggleGenre, onExpend}) => {
     }
   }
 
+  // Return the instructions and the genre Chips
   return (
     <div>
       <InfoLine

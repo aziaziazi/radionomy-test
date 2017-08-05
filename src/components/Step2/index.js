@@ -19,6 +19,7 @@ const H1Wrapper = styled.h1`
 `
 
 const Step2 = ({genres, onToggleGenre, onExpend}) => {
+  // render Title and Sections
   return (
     <div>
       <H1Wrapper>Tell us what kind of station it is.</H1Wrapper>

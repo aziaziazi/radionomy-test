@@ -10,15 +10,21 @@ import {
   toggle_expend,
 } from '../../actions'
 
+// TODO: move styles in a component, should't be in the container
 const ContentWrapper = styled.div`
   margin: 0 auto;
   width: 782px;
   max-width: calc(100% - 80px);
-  padding: 0 40px 110px 40px;
-
+  padding: 0 40px 110px 40px; // 110px: adjust according to footer height.
 `
 
 class ContentContainer extends Component {
+
+  // Separated the Step Number and StepContent:
+  // Steps contents can be very different from one to another
+  // even if they reuse some components. I can create them
+  // as "Step1", "Step2",...
+  // Step Number is always the same, only it's value change.
   render() {
     return (
       <ContentWrapper>
