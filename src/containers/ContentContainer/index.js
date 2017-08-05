@@ -14,7 +14,7 @@ const ContentWrapper = styled.div`
   margin: 0 auto;
   width: 782px;
   max-width: calc(100% - 80px);
-  padding: 0 40px 118px 40px;
+  padding: 0 40px 110px 40px;
 
 `
 
