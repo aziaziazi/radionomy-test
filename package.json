@@ -1,7 +1,7 @@
 {
   "name": "radionomy-test",
   "version": "0.1.0",
-  "homepage": "https://github.com/aziaziazi/radionomy-test",
+  "homepage": "https://aziaziazi.github.io/radionomy-test",
   "private": true,
   "dependencies": {
     "gh-pages": "^1.0.0",
