@@ -8,7 +8,7 @@ This is a quick job test. The goal is to implement a selectable and expendable l
 Clicking a chip select the corresponding genre. Cliking again unselect it.
 
 Cliking the chip's **+** buton expend it to show the sub-selected chips. Cliking it again collapse.
-**Previous Step** and **CONTINUE** buttons change the *step number* in the store which update the step counter on the top os the title.
+**Previous Step** and **CONTINUE** buttons change the *step number* in the store which update the step counter on the top of the title.
 
 # Usage
 
@@ -44,7 +44,7 @@ npm start
 
 # Notes on the data structure.
 
-I chage the data structure as bellow to store each genre, their data and their state. I choosed to flattent it (the original file was made of nested objects) to ease the later mapping throught the list. It's only a mock for now but it wouldn't be very difficult to create a function that fetch the datas from an API and re-arrange it in this shame.
+I changed the data structure as bellow to store each genre, it's data and it's state. I choosed to flattent it (the original file was made of nested objects) to ease the later mapping throught the list. It's only a mock for now but it wouldn't be very difficult to create a function that fetch the datas from an API and re-arrange it in this shame.
 
 ```js
 'genres' : [
@@ -82,7 +82,7 @@ The previous shame is easy to use but most of the time I perform an action or re
 ]
 ```
 
-I might also consider moving the ID's as a name for the genre's object. That could be even faster ans easier to use.
+I might also consider moving the ID's as a name for the genre's object. That could be even faster and easier to use.
 
 ```js
 `selectedGenres` : []
