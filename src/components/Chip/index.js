@@ -29,7 +29,7 @@ const Chip = ({type, genreID, label, onClick, selected}) => {
         return ;
     }
   }
-  selected ? console.log('true') : console.log('false')
+
   return (
     <ChipWrapper selected={selected} type={type} onClick={() => handleClick()}>
       {label}

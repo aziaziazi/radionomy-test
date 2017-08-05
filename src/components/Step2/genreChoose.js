@@ -1,40 +1,39 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import GenreChips from './genreChips';
-
-const IntroWrapper = styled.p`
-  height: 16px;
-  width: 245px;
-  color: #696B70;
-  font-size: 14px;
-  line-height: 16px;
-`
-const IntroItalicWrapper = styled.p`
-  height: 16px;
-  width: 214px;
-  opacity: 0.5;
-  color: #696B70;
-  font-size: 13px;
-  font-style: italic;
-  line-height: 16px;
-`
-
-const NumberSelectedWrapper = styled.p`
-  height: 16px;
-  width: 114px;
-  color: #ABACAF;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: right;
-`
+import InfoLine from './infoLine';
 
 const genreChoose = ({genres, onToggleGenre}) => {
+    // TODO: Store in the store instead
+   const GenreText = () => {
+    let selectedGenres = [];
+    genres.forEach((genre) => {
+      if (genre.selected) {
+        selectedGenres.push(genre.ID)
+      }
+    })
+
+    const nbGenresSelected = selectedGenres.length
+    switch (nbGenresSelected) {
+      case 0:
+        return "";
+      case 1:
+        return "1 genre selected";
+      default:
+        return nbGenresSelected + " genres selected";
+    }
+  }
+
   return (
     <div>
-      <IntroWrapper>What kind of music will you broadcast?</IntroWrapper>
-      <IntroItalicWrapper>(Select from 1 to 5 genres maximum)</IntroItalicWrapper>
-      <NumberSelectedWrapper>X genres selected</NumberSelectedWrapper>
+      <InfoLine
+        mainText="What kind of music will you broadcast?"
+        secondText="(Select from 1 to 5 genres maximum)"
+        selectedCounter={
+          <div>{GenreText()}</div>
+        }
+        genres={genres}
+      />
       <GenreChips
         genres={genres}
         onToggleGenre={onToggleGenre}

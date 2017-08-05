@@ -11,8 +11,9 @@ import {
 
 const ContentWrapper = styled.div`
   margin: 0 auto;
-  width: 782px;
+  width: 822px;
   max-width: 100vw;
+  padding: 0 40px;
 `
 
 class ContentContainer extends Component {

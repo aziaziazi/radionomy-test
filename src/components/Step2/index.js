@@ -4,15 +4,19 @@ import styled from 'styled-components';
 
 import GenreChoose from './genreChoose';
 import GenreSearch from './genreSearch';
+import StationType from './stationType';
+import StreamSpeed from './streamSpeed';
 
 const H1Wrapper = styled.h1`
-  height: 48px;
   color: #333333;
   font-family: "Proxima Nova";
   font-size: 40px;
   font-weight: bold;
   line-height: 48px;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 46px;
+
 `
 
 const Step2 = ({genres, onToggleGenre}) => {
@@ -23,7 +27,9 @@ const Step2 = ({genres, onToggleGenre}) => {
         genres={genres}
         onToggleGenre={onToggleGenre}
       />
-      <GenreSearch genres={genres} />
+      <GenreSearch/>
+      <StationType/>
+      <StreamSpeed/>
     </div>
   );
 }

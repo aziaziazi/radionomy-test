@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
+import ShoutCastLogo from '../../components/ShoutCastLogo';
+
 class HeaderContainer extends Component {
   render() {
     return (
-      <div>
-        ShoutCast Logo
-      </div>
+      <ShoutCastLogo />
     );
   }
 }

@@ -2,14 +2,14 @@ import React from 'react';
 
 import InfoLine from './infoLine';
 
-const genreSearch = () => {
+const stationType = () => {
   return (
     <div>
       <InfoLine
-        mainText="Search for other music genres"
+        mainText="Your station is an..."
       />
     </div>
   );
 }
 
-export default genreSearch;
+export default stationType;

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
 
-import PreviousStep from '../../components/PreviousStep';
-import NextStep from '../../components/NextStep';
+import StepsNavigation from '../../components/StepsNavigation';
 
 import {
   increment_step,
@@ -13,8 +12,10 @@ class FooterContainer extends Component {
   render() {
     return (
       <div>
-        <PreviousStep onDecrementStep={this.props.onDecrementStep} />
-        <NextStep onIncrementStep={this.props.onIncrementStep} />
+        <StepsNavigation
+          onDecrementStep={this.props.onDecrementStep}
+          onIncrementStep={this.props.onIncrementStep}
+        />
       </div>
     );
   }
