@@ -3,7 +3,7 @@ import React from 'react';
 import GenreChips from './genreChips';
 import InfoLine from './infoLine';
 
-const genreChoose = ({genres, onToggleGenre}) => {
+const genreChoose = ({genres, onToggleGenre, onExpend}) => {
     // TODO: Store in the store instead
    const GenreText = () => {
     let selectedGenres = [];
@@ -16,7 +16,7 @@ const genreChoose = ({genres, onToggleGenre}) => {
     const nbGenresSelected = selectedGenres.length
     switch (nbGenresSelected) {
       case 0:
-        return "";
+        return "No genres selected";
       case 1:
         return "1 genre selected";
       default:
@@ -37,6 +37,7 @@ const genreChoose = ({genres, onToggleGenre}) => {
       <GenreChips
         genres={genres}
         onToggleGenre={onToggleGenre}
+        onExpend={onExpend}
       />
     </div>
   );

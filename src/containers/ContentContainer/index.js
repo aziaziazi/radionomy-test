@@ -7,6 +7,7 @@ import Step2 from '../../components/Step2';
 
 import {
   toggle_genre,
+  toggle_expend,
 } from '../../actions'
 
 const ContentWrapper = styled.div`
@@ -24,6 +25,7 @@ class ContentContainer extends Component {
         <Step2
           genres={this.props.genres}
           onToggleGenre={this.props.onToggleGenre}
+          onExpend={this.props.onExpend}
         />
       </ContentWrapper>
     );
@@ -41,6 +43,9 @@ const mapDispatchToProps = (dispatch) => {
   return {
     onToggleGenre: (genreID) => {
       dispatch(toggle_genre(genreID));
+    },
+    onExpend: (genreID) => {
+      dispatch(toggle_expend(genreID));
     }
   }
 }

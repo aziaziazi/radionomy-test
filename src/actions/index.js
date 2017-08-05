@@ -17,3 +17,10 @@ export const toggle_genre = (genreID) => {
   }
 }
 
+export const toggle_expend = (genreID) => {
+  return {
+    type: 'TOGGLE_EXPEND',
+    genreID: genreID,
+  }
+}
+

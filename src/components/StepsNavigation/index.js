@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Chip from '../Chip';
-
 const StepsNavigationWrapper = styled.div`
   position: fixed;
   bottom: 0px;
@@ -21,6 +19,23 @@ const PreviousWrapper = styled.p`
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
+  cursor: pointer;
+`
+
+const NextWrapper = styled.p`
+  display: inline-block;
+  padding: 0 15px;
+  padding: 0 76px;
+  margin: 5.25px 5.6px;
+  height: 52px;
+  line-height: 52px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 100px;
+  background: linear-gradient(90deg, #04D4EA 0%, #27A5E5 100%);
+  color: #FFFFFF;
+  border: none;
+  cursor: pointer;
 `
 
 const StepsNavigation = ({genres, onToggleGenre, onDecrementStep, onIncrementStep}) => {
@@ -30,12 +45,11 @@ const StepsNavigation = ({genres, onToggleGenre, onDecrementStep, onIncrementSte
         onClick={onDecrementStep} >
         &lt; Previous Step
       </PreviousWrapper>
-      <Chip
-        type={"continue"}
-        label={"CONTINUE"}
+      <NextWrapper
         onClick={onIncrementStep}
-        selected
-      />
+      >
+        {"CONTINUE"}
+      </NextWrapper>
     </StepsNavigationWrapper>
   );
 }
