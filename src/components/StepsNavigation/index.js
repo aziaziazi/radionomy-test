@@ -1,12 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const wrappwrapp = styled.div`
+  min-height:100%;
+  position:relative;
+`
+
+
 const StepsNavigationWrapper = styled.div`
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
   height: 135px;
-  padding: 40px;
+  padding: 0 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -40,6 +43,7 @@ const NextWrapper = styled.p`
 
 const StepsNavigation = ({genres, onToggleGenre, onDecrementStep, onIncrementStep}) => {
   return (
+    <wrappwrapp>
     <StepsNavigationWrapper>
       <PreviousWrapper
         onClick={onDecrementStep} >
@@ -51,6 +55,7 @@ const StepsNavigation = ({genres, onToggleGenre, onDecrementStep, onIncrementSte
         {"CONTINUE"}
       </NextWrapper>
     </StepsNavigationWrapper>
+    </wrappwrapp>
   );
 }
 

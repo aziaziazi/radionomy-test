@@ -12,9 +12,10 @@ import {
 
 const ContentWrapper = styled.div`
   margin: 0 auto;
-  width: 822px;
-  max-width: 100vw;
-  padding: 0 40px;
+  width: 782px;
+  max-width: calc(100% - 80px);
+  padding: 0 40px 118px 40px;
+
 `
 
 class ContentContainer extends Component {

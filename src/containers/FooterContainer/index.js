@@ -11,12 +11,10 @@ import {
 class FooterContainer extends Component {
   render() {
     return (
-      <div>
-        <StepsNavigation
+      <StepsNavigation
           onDecrementStep={this.props.onDecrementStep}
           onIncrementStep={this.props.onIncrementStep}
-        />
-      </div>
+      />
     );
   }
 }

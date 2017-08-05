@@ -9,7 +9,6 @@ export default (state = mockGenres, action) => {
           : genre
       )
     case 'TOGGLE_EXPEND':
-    console.log('click =>');
       return state.map(genre =>
         (genre.ID === action.genreID)
           ? {...genre, Expended: !genre.Expended}
