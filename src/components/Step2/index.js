@@ -11,7 +11,7 @@ const H1Wrapper = styled.h1`
   color: #333333;
   font-family: "Proxima Nova";
   font-size: 40px;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 48px;
   text-align: center;
   margin-top: 10px;

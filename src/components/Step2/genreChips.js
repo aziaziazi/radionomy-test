@@ -36,11 +36,11 @@ const genreChips = ({genres, onToggleGenre, onExpend}) => {
     })
   )
 
-  return (
+   return (
     <GenreChipsWrapper>
-      {genres.map((genre) =>  // Map through the genres list
-        genre.isParentGenre   // If find a parent genre...
-          ? renderChip(genre) // ... render it
+      {genres.map((genre) =>              // Map through the genres list
+        genre.IsParentGenre               // If find a parent genre...
+          ? renderChip(genre)             // ... render it
           : renderIfParentExpended(genre) // else, render only if it's own parent is expended
       )}
     </GenreChipsWrapper>
