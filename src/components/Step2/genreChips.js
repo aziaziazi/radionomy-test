@@ -10,6 +10,7 @@ const genreChips = ({genres, onToggleGenre}) => {
         genreID={genre.ID}
         label={genre.Name}
         onClick={onToggleGenre}
+        selected = {genre.selected}
       />
   )
 
