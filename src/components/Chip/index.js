@@ -4,32 +4,36 @@ import styled from 'styled-components';
 const ChipWrapper = styled.p`
   display: inline-block;
   padding: 0 15px;
+  padding: ${props => props.type === 'continue' ? '0 76px' : '0 15px'};
   margin: 5.25px 5.6px;
-  height: ${props => props.big
-    ? '86px'
-    : '31px'
-  };
-  line-height: 31px;
-  font-size: 14px;
+  height: ${props => props.type === 'continue' ? '52px' : '31px'};
+  line-height: ${props => props.type === 'continue' ? '52px' : '31px'};
+  font-size: ${props => props.type === 'continue' ? '16px' : '14px'};
   font-weight: 600;
   color: #FFFFFF;
   border-radius: 100px;
   background: linear-gradient(90deg, #04D4EA 0%, #27A5E5 100%);
-
-    // height: 19px;
-    // width: 86px;
-    // color: #FFFFFF;
-    // font-family: "Proxima Nova";
-    // font-size: 16px;
-    // font-weight: 600;
-    // line-height: 19px;
-    // text-align: center;
 `
 
-const Chip = ({genre, onToggleGenre}) => (
-  <ChipWrapper onClick={() => onToggleGenre(genre)}>
-    {genre.Name}
-  </ChipWrapper>
-)
+const Chip = ({type, genreID, label, onClick}) => {
+  const handleClick = () => {
+    switch (type) {
+      case 'genre':
+        onClick(genreID);
+        break;
+      case 'continue':
+        onClick()
+        break
+      default:
+        return ;
+    }
+  }
+
+  return (
+    <ChipWrapper type={type} onClick={() => handleClick()}>
+      {label}
+    </ChipWrapper>
+  )
+}
 
 export default Chip;

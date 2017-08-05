@@ -31,8 +31,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onToggleGenre: (genre) => {
-      dispatch(toggle_genre(genre));
+    onToggleGenre: (genreID) => {
+      dispatch(toggle_genre(genreID));
     }
   }
 }

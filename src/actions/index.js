@@ -10,10 +10,10 @@ export const decrement_step = () => {
   }
 }
 
-export const toggle_genre = (genre) => {
+export const toggle_genre = (genreID) => {
   return {
     type: 'TOGGLE_GENRE',
-    genreID: genre.ID,
+    genreID: genreID,
   }
 }
 

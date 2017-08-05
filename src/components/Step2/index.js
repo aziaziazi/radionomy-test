@@ -7,7 +7,6 @@ import GenreSearch from './genreSearch';
 
 const H1Wrapper = styled.h1`
   height: 48px;
-  width: 574px;
   color: #333333;
   font-family: "Proxima Nova";
   font-size: 40px;

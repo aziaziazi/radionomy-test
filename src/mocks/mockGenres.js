@@ -3,7 +3,7 @@ export const mockGenres = [
     "Name": "Blues =",
     "ParentGenreID": null,
     "ID": 190,
-    "selected": true,
+    "selected": false,
   },{
     "Name": "Acoustic Blues",
     "ParentGenreID": 190,

@@ -6,8 +6,11 @@ const genreChips = ({genres, onToggleGenre}) => {
   const renderChip = (genre) => (
       <Chip
         key={genre.ID}
-        genre={genre}
-        onToggleGenre={onToggleGenre} />
+        type={"genre"}
+        genreID={genre.ID}
+        label={genre.Name}
+        onClick={onToggleGenre}
+      />
   )
 
   // render sub-genre if its parent is selected

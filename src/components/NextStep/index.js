@@ -1,18 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const NextWrapper = styled.p`
+import Chip from '../Chip';
 
-`
+const NextStep = ({onIncrementStep}) => {
+  const renderNextStep = () => (
+      <Chip
+        type={"continue"}
+        label={"CONTINUE"}
+        onClick={onIncrementStep}
+      />
+  )
 
-const NextStep = ({onDecrementStep}) => {
   return (
     <div>
-      <NextWrapper onClick={onDecrementStep} >
-        Continue
-      </NextWrapper>
+      { renderNextStep() }
     </div>
-    );
+  )
 }
 
 export default NextStep;
