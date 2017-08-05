@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux'
+import styled from 'styled-components';
 
 import StepNumber from '../../components/StepNumber';
 import Step2 from '../../components/Step2';
@@ -8,16 +9,22 @@ import {
   toggle_genre,
 } from '../../actions'
 
+const ContentWrapper = styled.div`
+  margin: 0 auto;
+  width: 782px;
+  max-width: 100vw;
+`
+
 class ContentContainer extends Component {
   render() {
     return (
-      <div>
+      <ContentWrapper>
         <StepNumber step={this.props.step} />
         <Step2
           genres={this.props.genres}
           onToggleGenre={this.props.onToggleGenre}
         />
-      </div>
+      </ContentWrapper>
     );
   }
 }

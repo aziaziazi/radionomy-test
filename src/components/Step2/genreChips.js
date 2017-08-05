@@ -1,6 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Chip from '../Chip';
+
+
+const GenreChipsWrapper = styled.div`
+  margin: 0 -5.6px;
+`
 
 const genreChips = ({genres, onToggleGenre}) => {
   const renderChip = (genre) => (
@@ -24,13 +30,13 @@ const genreChips = ({genres, onToggleGenre}) => {
   )
 
   return (
-    <div>
+    <GenreChipsWrapper>
       {genres.map((genre) =>
         (genre.ParentGenreID == null)
           ? renderChip(genre)
           : renderIfParentSelected(genre)
       )}
-    </div>
+    </GenreChipsWrapper>
   );
 }
 
