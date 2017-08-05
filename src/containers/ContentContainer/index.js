@@ -13,8 +13,8 @@ import {
 // TODO: move styles in a component, should't be in the container
 const ContentWrapper = styled.div`
   margin: 0 auto;
-  width: 782px;
-  max-width: calc(100% - 80px);
+  width: 862px;
+  max-width: 100%;
   padding: 0 40px 110px 40px; // 110px: adjust according to footer height.
 `
 
