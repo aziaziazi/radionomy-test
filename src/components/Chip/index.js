@@ -4,11 +4,9 @@ import styled from 'styled-components';
 // change the aspect of selected chips
 const ChipWrapper = styled.div`
   display: inline-block;
-  padding: 0 15px;
-  padding: 0 15px;
   margin: 5.25px 5.6px;
-  height: 31px;
-  line-height: 31px;
+  padding:  ${ props => props.selected === true ? '0 16px' : '0 15px' };
+  line-height:  ${ props => props.selected === true ? '31px' : '29px' };
   font-size: 14px;
   font-weight: 600;
   border-radius: 100px;
@@ -16,7 +14,6 @@ const ChipWrapper = styled.div`
   color: ${ props => props.selected === true ? '#FFFFFF' : '#18A4E8' };
   border: ${ props => props.selected === true ? 'none' : '1px solid #D9DEE8' };
   cursor: pointer;
-  box-sizing: content-box;
 `
 
 const Chip = ({genreID, label, onClick, selected, isParentGenre, Expended, onExpend}) => {
