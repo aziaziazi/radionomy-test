@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 // change the aspect of selected chips
-const ChipWrapper = styled.p`
+const ChipWrapper = styled.div`
   display: inline-block;
   padding: 0 15px;
   padding: 0 15px;
@@ -16,6 +16,7 @@ const ChipWrapper = styled.p`
   color: ${ props => props.selected === true ? '#FFFFFF' : '#18A4E8' };
   border: ${ props => props.selected === true ? 'none' : '1px solid #D9DEE8' };
   cursor: pointer;
+  box-sizing: content-box;
 `
 
 const Chip = ({genreID, label, onClick, selected, isParentGenre, Expended, onExpend}) => {
